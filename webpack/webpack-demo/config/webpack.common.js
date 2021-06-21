@@ -10,7 +10,7 @@ module.exports = {
     // print: './src/print.js',
   },
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].bundle_[hash:4].js",
     path: path.resolve("./", "dist"),
     // path: path.resolve(__dirname, "dist"),
     /* __dirname 获取当前文件执行的绝对路径 , ./ 获取node执行时的工作路径 
