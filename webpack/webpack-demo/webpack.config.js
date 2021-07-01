@@ -15,7 +15,7 @@ module.exports = {
     // print: './src/print.js',
   },
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].bundle[chunkhash:4].js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -38,9 +38,17 @@ module.exports = {
   ],
   optimization: {
     // webpack 4代码分离
+    moduleIds: "hashed", // 模块标识符
+    runtimeChunk: "single",
     splitChunks: {
-      chunks: "all",
-      name: "common",
+      cacheGroups: {
+        vendor: {
+          // 提取模板
+          name: "vendors",
+          chunks: "all",
+          test: /[\\/]node_modules[\\/]/,
+        },
+      },
     },
   },
 };
