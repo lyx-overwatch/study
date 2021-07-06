@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "strict": false,
+    "outDir": "./esm"
+  },
+  "include": ["src/*"],
+  "exclude": []
+}
