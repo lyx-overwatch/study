@@ -8,5 +8,8 @@
     "build": "tsc -p tsconfig.json"
   },
   "author": "liuyunxiang",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }
