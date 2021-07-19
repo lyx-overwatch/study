@@ -6,7 +6,7 @@ const foucsFunc = () => {
     setTimeout(() => {
       var scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;
-      window.scrollTo(scrollTop, 0);
+      window.scrollTo(0, -scrollTop);
     }, 100);
   }
 };
