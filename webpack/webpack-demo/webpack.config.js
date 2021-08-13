@@ -15,7 +15,7 @@ module.exports = {
     // print: './src/print.js',
   },
   output: {
-    filename: "[name].bundle[chunkhash:4].js",
+    filename: "[name].bundle[hash:4].js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
